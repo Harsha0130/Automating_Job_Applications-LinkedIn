@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 # from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 import os
 import time
 
@@ -32,3 +33,16 @@ enter.click()
 # Applying for Job
 
 # ---- To be continued
+
+# all_listings = driver.find_elements("class name", "jobs-search-results__list-item")
+# for job in all_listings:
+#     actions = ActionChains(driver)
+#     actions.move_to_element(job).perform()
+#     job.click()
+#     time.sleep(2)
+#     save_job_button = driver.find_element("class name", "jobs-save-button")
+#     save_job_button.click()
+#     time.sleep(2)
+#     dialog_box_button = driver.find_element("class name", "artdeco-toast-item__dismiss")
+#     dialog_box_button.click()
+#     time.sleep(1)
