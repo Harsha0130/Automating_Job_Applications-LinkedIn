@@ -1,7 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 # from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.action_chains import ActionChains
 import os
 import time
 
@@ -30,7 +29,12 @@ password.send_keys(PASSWORD)
 enter = driver.find_element(By.CLASS_NAME, value="from__button--floating")
 enter.click()
 
-# Applying for Job
+# Saving the Job post instead of applying as we are just experimenting
+save = driver.find_element(By.CLASS_NAME, value="jobs-save-button")
+save.click()
+print("Saved")
+
+
 
 # ---- To be continued
 
